@@ -19,7 +19,7 @@ navLinks.forEach((link) => {
 AOS.init({
   duration: 2000,
   easing: "ease-in-out",
-  once: true,
+  once: false,
 });
 
 const photoHighlightSwiper = new Swiper(".photo-highlights-swiper", {
@@ -80,4 +80,5 @@ learnMoreButtons.forEach((button) => {
 popUpCloseButton.addEventListener("click", () => {
   popUpWindow.style.display = "none";
 });
+
 
