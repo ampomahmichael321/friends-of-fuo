@@ -17,7 +17,7 @@ navLinks.forEach((link) => {
 });
 
 AOS.init({
-  duration: 1500,
+  duration: 2000,
   easing: "ease-in-out",
   once: true,
 });
@@ -80,3 +80,4 @@ learnMoreButtons.forEach((button) => {
 popUpCloseButton.addEventListener("click", () => {
   popUpWindow.style.display = "none";
 });
+
