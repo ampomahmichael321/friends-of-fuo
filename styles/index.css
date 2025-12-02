@@ -132,7 +132,8 @@ main {
   gap: 2em;
 }
 .hero-button-section .button {
-  width: 8em;
+  min-width: 8em;
+  max-width: 9.5em
   height: 2.5em;
 }
 .get-involved-button {
@@ -503,6 +504,7 @@ footer a {
     flex-direction: row;
   }
 }
+
 
 
 
