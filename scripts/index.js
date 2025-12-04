@@ -19,7 +19,7 @@ navLinks.forEach((link) => {
 AOS.init({
   duration: 1500,
   easing: "ease-in-out",
-  once: false,
+  once: true,
 });
 
 const photoHighlightSwiper = new Swiper(".photo-highlights-swiper", {
@@ -37,6 +37,18 @@ const photoHighlightSwiper = new Swiper(".photo-highlights-swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+const desktopPhotoHighlightSwiper = new Swiper(".desktop-photo-swiper", {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 0,
+  direction: "horizontal",
+  loop: true,
+  autoplay: {
+    delay: 3000, // time between slides (ms) → 3000ms = 3 seconds
+    disableOnInteraction: false, // keeps autoplay running after user swipes
   },
 });
 
@@ -80,6 +92,3 @@ learnMoreButtons.forEach((button) => {
 popUpCloseButton.addEventListener("click", () => {
   popUpWindow.style.display = "none";
 });
-
-
-

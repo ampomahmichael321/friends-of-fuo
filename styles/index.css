@@ -97,7 +97,7 @@ main {
 }
 
 .pop-up-window-hidden {
-  display: none; 
+  display: none;
   font-size: 1.1em;
   transform: none;
 }
@@ -238,6 +238,11 @@ main {
   justify-content: center;
   margin-top: 3em;
 }
+.ongoing-campaigns-desktop-view,
+.desktop-photo-highlights,
+.latest-projects-desktop-view {
+  display: none;
+}
 .campaign,
 .encouragement-quote,
 .project {
@@ -259,6 +264,7 @@ main {
 
 .learn-more-link {
   color: #cb1b44;
+  cursor: pointer;
 }
 .encouragement-quote {
   margin-top: 1.5em;
@@ -277,7 +283,7 @@ main {
   margin-bottom: 1em;
 }
 .photo-highlights-section {
-  margin-top: 3em;
+  margin-top: 6em;
   flex-direction: column;
   gap: 2em;
   display: flex;
@@ -336,6 +342,26 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+.social-img-links {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.social-img-links img {
+  width: 2em;
+  height: 2em;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+.social-img-links img:hover,
+.nav-link:hover,
+.quick-links-grid a:hover {
+  transform: scale(1.2);
+}
+.nav-link,
+.quick-links-grid a {
+  transition: transform 0.3s ease-in-out;
 }
 
 .quick-links-heading {
@@ -503,10 +529,43 @@ footer a {
   .mission-vision {
     flex-direction: row;
   }
+  .ongoing-campaigns-mobile-view,
+  .latest-projects-mobile-view {
+    display: none;
+  }
+  .ongoing-campaigns-desktop-view,
+  .latest-projects-desktop-view {
+    display: flex;
+    margin-top: 2em;
+  }
+
+  .photo-highlights-swiper {
+    display: none;
+  }
+  .desktop-photo-highlights {
+    display: inline-block;
+    width: 70%;
+    height: 32em;
+    position: relative;
+    overflow: hidden;
+  }
+  .desktop-photo-swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .desktop-photo-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps images proportional */
+    display: block;
+  }
+  .photo-description {
+    max-width: 50%;
+  }
+  .pop-up-window-hidden {
+    top: 5em;
+    bottom: 5em;
+    left: 17em;
+    right: 17em;
+  }
 }
-
-
-
-
-
-
