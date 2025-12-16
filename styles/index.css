@@ -364,6 +364,10 @@ footer a {
   transition: transform 0.3s ease-in-out;
 }
 
+.home-link {
+  border-bottom: solid #e62d58 2.5px;
+  padding-bottom: 0.4em;
+}
 .quick-links-heading {
   margin-top: 2em;
   text-align: center;
@@ -458,6 +462,9 @@ footer a {
   .achievements-band {
     padding: 2em;
     font-size: 1em;
+  }
+  .encouragement-quote {
+    max-width: 60%;
   }
 }
 @media (min-width: 800px) {
