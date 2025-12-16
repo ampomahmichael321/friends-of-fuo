@@ -464,7 +464,7 @@ footer a {
     font-size: 1em;
   }
   .encouragement-quote {
-    max-width: 60%;
+    max-width: 50%;
   }
 }
 @media (min-width: 800px) {
