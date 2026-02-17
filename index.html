@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -63,27 +63,19 @@
       >
       <p href="" class="nav-link">CONTACT</p>
     </div>
-    <main>
-      <div class="pop-up-window-hidden">
-        <div class="close-button close-pop-up-button">
-          <img src="./icons/close-icon-black.png" />
-        </div>
-        <div class="pop-up-content">
-          <h2 class="pop-up-heading">PROJECT TITLE</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-            reprehenderit ad molestiae, consequatur totam recusandae vero fugiat
-            minima, deserunt, corporis distinctio debitis similique dolore.
-            Quaerat at nihil culpa voluptate voluptatem?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-            reprehenderit ad molestiae, consequatur totam recusandae vero fugiat
-            minima, deserunt, corporis distinctio debitis similique dolore.
-            Quaerat at nihil culpa voluptate voluptatem?
-          </p>
-        </div>
+    <!-- Pop up window -->
+    <div class="pop-up-window-hidden">
+      <div class="close-button close-pop-up-button">
+        <img src="./icons/close-icon-black.png" />
       </div>
+      <div class="pop-up-content">
+        <div class="pop-up-heading"></div>
+        <div class="pop-up-main-content"></div>
+      </div>
+    </div>
+
+    <!-- Pop up window ends -->
+    <main>
       <section class="hero-section">
         <div class="hero-overlay-text" data-aos="fade-up">
           <h1>When we equip a classroom, we empower a generation</h1>
@@ -107,15 +99,15 @@
       <section class="about-section" id="about-section">
         <div class="who-we-are" data-aos="zoom-in-up">
           <div class="who-we-are-left">
-            <h2 class="color-gold">Who We Are</h2>
-            <p>
+            <h2 class="color-gold" data-aos="zoom-in-up">Who We Are</h2>
+            <p data-aos="zoom-in-up">
               Friends of Fuo 2 Inc. is a 501(c)(3) nonprofit working to improve
               education in Fuo AME Zion Basic School in Tamale, Northern Ghana.
               We provide desks, books, and essential classroom supplies so
               students can learn in a safe, supportive, and dignified
               environment.
             </p>
-            <a href="" class="button">DONATE</a>
+            <a href="" class="button" data-aos="zoom-in-up">DONATE</a>
           </div>
           <div class="who-we-are-right big-screen-only">
             <h2 class="color-gold">ON A MISSION SINCE 2023</h2>
@@ -125,30 +117,36 @@
             </div>
           </div>
         </div>
-        <div class="our-history" data-aos="zoom-in-up">
-          <h2 class="color-gold">OUR HISTORY</h2>
+        <div class="our-history">
+          <h2 class="color-gold" data-aos="zoom-in-up">OUR HISTORY</h2>
           <div class="our-history-grid">
             <div class="our-history-left big-screen-only">
               <h1>Logo</h1>
             </div>
             <div class="our-history-right">
               <h1 class="logo">Logo</h1>
-              <p>
-                Our History began in 2023, when our founder met Mary Naa
-                Afi-Kofi, a dedicated teacher, at a missionary conference in
-                Accra. Her photos revealed classrooms where students sat on the
-                floor or squeezed four to a broken desk. Inspired by their
-                determination and Mary's unwavering commitment, Friend of Fuo 2
-                Inc. was born with a mission to meet the need, one desk at a
-                time
+              <p data-aos="zoom-in-up">
+                Our journey began in 2023, when our founder met Mary Naa-Afi
+                Kofi, a dedicated teacher, at a missionary conference in Accra.
+                Through her photos, we saw children learning on the floor or
+                squeezed into broken desks. Inspired by the students’
+                determination and Mary’s unwavering commitment.<br />
+                Friends of Fuo 2Inc. was created to help meet these needs, one
+                classroom at a time. Today, the school seves 497 students from
+                Nursery through Junior High School. <br />
+                In addition to classroom support, we also help students from
+                Ghana pursue higher education, expanding access and opportunity
+                beyond the schoolyard.<br />
+                Together, we are building brighter futures through education,
+                dignity, and care
               </p>
             </div>
           </div>
         </div>
-        <div class="our-purpose" data-aos="zoom-in-up">
-          <h2 class="color-gold">OUR PURPOSE</h2>
+        <div class="our-purpose">
+          <h2 class="color-gold" data-aos="zoom-in-up">OUR PURPOSE</h2>
           <div class="mission-vision">
-            <div class="mission-vision-card">
+            <div class="mission-vision-card" data-aos="zoom-in-up">
               <h3>OUR MISSION</h3>
               <p>
                 Friends of Fuo 2 Inc. is dedicated to enhancing educational
@@ -160,7 +158,7 @@
                 supporting students as they pursue higher education.
               </p>
             </div>
-            <div class="mission-vision-card">
+            <div class="mission-vision-card" data-aos="zoom-in-up">
               <h3>OUR VISION</h3>
               <p>
                 Friends of Fuo 2 Inc. envisions a future where every student has
@@ -173,18 +171,61 @@
             </div>
           </div>
         </div>
-        <div class="achievements-band" data-aos="zoom-in-up">
-          <div class="achievement">
-            <p>500+</p>
-            <p>Desks donated</p>
+        <div class="what-class-needs-section">
+          <h3 class="color-gold" data-aos="zoom-in-up">
+            WHAT A CLASSROOM NEEDS
+          </h3>
+          <div class="grid" data-aos="zoom-in-up">
+            <div class="grid-item">
+              <img
+                src="./Images/student_chair-removebg-preview.png"
+                alt="student desk"
+              />
+              <p>Student desk</p>
+            </div>
+            <div class="grid-item">
+              <img
+                id="teacher-desk"
+                src="./Images/teacher_desk-removebg-preview.png"
+                alt="teacher desk"
+              />
+              <p>Teacher desk</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="./Images/whiteboard-removebg-preview.png"
+                alt="white board"
+              />
+              <p>Whiteboard</p>
+            </div>
+            <div class="grid-item">
+              <img src="./Images/dignity-removebg-preview.png" alt="dignity" />
+              <p>Dignity</p>
+            </div>
           </div>
-          <div class="achievement">
-            <p>20,000+</p>
-            <p>Books donated</p>
-          </div>
-          <div class="achievement">
-            <p>3,000+</p>
-            <p>Lives impacted</p>
+          <div class="words" data-aos="zoom-in-up">
+            <h2>
+              "When Students walk into this classroom, they see who believed in
+              them"
+            </h2>
+            <p>At Fuo AME Zion Basic School, every classroom tells a story.</p>
+            <p>
+              On the wall is a plaque-listing the names of those who made
+              learning possible in that room. Parents see it. Teachers see it.
+              Students see it.
+            </p>
+            <p>
+              Children grow up knowing:<br />
+              Someone somewhere cared enough to invest in us.
+            </p>
+            <p>
+              This is how generosity becomes memory.<br />
+              This is how impact becomes legacy.
+            </p>
+            <p>
+              When you give to Friends of Fuo 2 Inc., your name isn't filed
+              away, it is honored where learning happens
+            </p>
           </div>
         </div>
       </section>
@@ -203,8 +244,10 @@
                     src="./Images/fuo 2.jpeg"
                     alt="Image of Children in classroom holding their books"
                   />
-                  <h3>ONE DESK AT A TIME</h3>
-                  <p class="learn-more-link">Learn more</p>
+                  <h3>No child should learn on the floor</h3>
+                  <p class="learn-more-link" data-campaign="no-child">
+                    Learn more
+                  </p>
                 </div>
               </div>
 
@@ -215,20 +258,10 @@
                     src="./Images/fuo 3.jpeg"
                     alt="Image of Children in classroom holding their books"
                   />
-                  <h3>ONE BOOK AT A TIME</h3>
-                  <p class="learn-more-link">learn more</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="campaign">
-                  <img
-                    class="project-top-image"
-                    src="./Images/fuo1.jpeg"
-                    alt="Image of Children in classroom holding their books"
-                  />
-                  <h3>ONE CHILD AT A TIME</h3>
-
-                  <p class="learn-more-link">learn more</p>
+                  <h3>Support a classroom</h3>
+                  <p class="learn-more-link" data-campaign="support-classroom">
+                    learn more
+                  </p>
                 </div>
               </div>
             </div>
@@ -237,6 +270,7 @@
             <div class="swiper-button-next"></div>
           </div>
         </div>
+
         <div class="ongoing-campaigns-desktop-view">
           <div class="campaign">
             <img
@@ -244,8 +278,8 @@
               src="./Images/fuo 2.jpeg"
               alt="Image of Children in classroom holding their books"
             />
-            <h3>ONE DESK AT A TIME</h3>
-            <p class="learn-more-link">Learn more</p>
+            <h3>No child should learn on the floor</h3>
+            <p class="learn-more-link" data-campaign="no-child">Learn more</p>
           </div>
           <div class="campaign">
             <img
@@ -253,17 +287,10 @@
               src="./Images/fuo 2.jpeg"
               alt="Image of Children in classroom holding their books"
             />
-            <h3>ONE DESK AT A TIME</h3>
-            <p class="learn-more-link">Learn more</p>
-          </div>
-          <div class="campaign">
-            <img
-              class="project-top-image"
-              src="./Images/fuo 2.jpeg"
-              alt="Image of Children in classroom holding their books"
-            />
-            <h3>ONE DESK AT A TIME</h3>
-            <p class="learn-more-link">Learn more</p>
+            <h3>Support a classroom</h3>
+            <p class="learn-more-link" data-campaign="support-classroom">
+              Learn more
+            </p>
           </div>
         </div>
         <div class="encouragement-quote" data-aos="zoom-in-up">
@@ -275,121 +302,7 @@
           <a href="" class="button donate-button">MAKE A DONATION</a>
         </div>
       </section>
-      <section class="latest-projects">
-        <h2 class="color-gold">LATEST PROJECTS</h2>
-        <div class="latest-projects-mobile-view" data-aos="zoom-in-up">
-          <!-- Add the slider -->
-          <!-- Slider main container -->
-          <div class="latest-projects-swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="project">
-                  <img
-                    class="project-top-image"
-                    src="./Images/fuo 2.jpeg"
-                    alt="Image of Children in classroom holding their books"
-                  />
-                  <h3>PROJECT TITLE</h3>
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatem, quam! Vitae at iure, quidem inventore ab nostrum
-                    aliquam dignissimos? A nihil molestiae voluptatum molestias
-                    labore assumenda nobis eligendi, suscipit mollitia?
-                  </p>
-                  <p class="learn-more-link">Read more</p>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="project">
-                  <img
-                    class="project-top-image"
-                    src="./Images/fuo 3.jpeg"
-                    alt="Image of Children in classroom holding their books"
-                  />
-                  <h3>PROJECT TITLE</h3>
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatem, quam! Vitae at iure, quidem inventore ab nostrum
-                    aliquam dignissimos? A nihil molestiae voluptatum molestias
-                    labore assumenda nobis eligendi, suscipit mollitia?
-                  </p>
-                  <p class="learn-more-link">Read more</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="project">
-                  <img
-                    class="project-top-image"
-                    src="./Images/fuo1.jpeg"
-                    alt="Image of Children in classroom holding their books"
-                  />
-                  <h3>PROJECT TITLE</h3>
-                  <p class="project-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatem, quam! Vitae at iure, quidem inventore ab nostrum
-                    aliquam dignissimos? A nihil molestiae voluptatum molestias
-                    labore assumenda nobis eligendi, suscipit mollitia?
-                  </p>
-                  <p class="learn-more-link">Read more</p>
-                </div>
-              </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
-        <div class="latest-projects-desktop-view">
-          <div class="project">
-            <img
-              class="project-top-image"
-              src="./Images/fuo 2.jpeg"
-              alt="Image of Children in classroom holding their books"
-            />
-            <h3>PROJECT TITLE</h3>
-            <p class="project-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, quam! Vitae at iure, quidem inventore ab nostrum
-              aliquam dignissimos? A nihil molestiae voluptatum molestias labore
-              assumenda nobis eligendi, suscipit mollitia?
-            </p>
-            <p class="learn-more-link">Read more</p>
-          </div>
-          <div class="project">
-            <img
-              class="project-top-image"
-              src="./Images/fuo bg.jpeg"
-              alt="Image of Children in classroom holding their books"
-            />
-            <h3>PROJECT TITLE</h3>
-            <p class="project-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, quam! Vitae at iure, quidem inventore ab nostrum
-              aliquam dignissimos? A nihil molestiae voluptatum molestias labore
-              assumenda nobis eligendi, suscipit mollitia?
-            </p>
-            <p class="learn-more-link">Read more</p>
-          </div>
-          <div class="project">
-            <img
-              class="project-top-image"
-              src="./Images/fuo 4.jpeg"
-              alt="Image of Children in classroom holding their books"
-            />
-            <h3>PROJECT TITLE</h3>
-            <p class="project-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, quam! Vitae at iure, quidem inventore ab nostrum
-              aliquam dignissimos? A nihil molestiae voluptatum molestias labore
-              assumenda nobis eligendi, suscipit mollitia?
-            </p>
-            <p class="learn-more-link">Read more</p>
-          </div>
-        </div>
-      </section>
+      <!-- Add latest updates that will call on the blog api -->
       <div class="photo-highlights-section" data-aos="zoom-in-up">
         <h2 class="color-gold">PHOTO HIGHLIGHTS</h2>
         <!-- Slider main container -->

@@ -48,8 +48,7 @@ nav {
   width: 3em;
 }
 
-.hidden-menu,
-.pop-up-window-hidden {
+.hidden-menu {
   transform: translateX(200em);
   display: flex;
   flex-direction: column;
@@ -62,7 +61,8 @@ nav {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.814);
+  backdrop-filter: blur(10px);
   margin: 0;
   z-index: 100;
   transition: transform 0.3s ease-in-out;
@@ -98,8 +98,24 @@ main {
 
 .pop-up-window-hidden {
   display: none;
+  position: fixed;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1.1em;
   font-size: 1.1em;
-  transform: none;
+  background-color: rgba(255, 255, 255, 0.814);
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+.pop-up-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1em 0;
 }
 
 .hero-section {
@@ -156,6 +172,10 @@ main {
 .our-history {
   flex-direction: column;
   margin-top: 4em;
+  padding: 2em 0;
+  background-color: rgb(27, 2, 62);
+  color: white;
+  margin-bottom: 0;
 }
 .who-we-are-left,
 .our-history-right {
@@ -180,7 +200,10 @@ main {
 }
 .our-purpose {
   flex-direction: column;
-  margin-top: 3em;
+  margin: 0;
+  padding: 3em 0;
+  background-color: rgb(27, 2, 62);
+  color: white;
 }
 .mission-vision {
   display: flex;
@@ -202,19 +225,51 @@ main {
   border-radius: 15px;
   max-height: 25em;
 }
-.achievements-band {
-  margin-top: 4em;
+.what-class-needs-section {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-  gap: 1.5em;
-  font-size: 0.8em;
-  text-align: center;
-  background-color: #1747bf;
+  justify-content: center;
+  padding: 5em 0;
+  background-color: rgb(27, 2, 62);
   color: white;
-  padding: 1.5em 1em;
+}
+.what-class-needs-section .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  place-items: center;
+  align-items: baseline;
+  max-width: 80%;
+  padding-top: 1.2em;
+}
+.what-class-needs-section .grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 10em;
+}
+.grid-item img {
+  width: 100%;
+  max-width: 6em;
 }
 
+#teacher-desk {
+  min-width: 9em;
+}
+
+.words {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  gap: 1em;
+  padding: 2em 0;
+}
+.words h2 {
+  margin-bottom: 1em;
+}
 .ongoing-campaigns,
 .latest-projects {
   display: flex;
@@ -329,7 +384,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  background-color: #1747bf;
+  background-color: black;
   color: white;
   padding: 2em 0;
   font-size: 1.1em;
@@ -481,6 +536,9 @@ footer a {
 }
 
 @media (min-width: 900px) {
+  body {
+    font-size: 1.1em;
+  }
   .nav-links {
     display: flex;
     gap: 4em;
@@ -544,6 +602,7 @@ footer a {
   .latest-projects-desktop-view {
     display: flex;
     margin-top: 2em;
+    justify-content: center;
   }
 
   .photo-highlights-swiper {
@@ -574,5 +633,27 @@ footer a {
     bottom: 5em;
     left: 17em;
     right: 17em;
+  }
+  .campaign {
+    max-width: 35%;
+  }
+  .what-class-needs-section h3 {
+    font-size: 1.5em;
+  }
+
+  .what-class-needs-section .grid {
+    width: 100%;
+  }
+  .what-class-needs-section .grid-item {
+    min-width: 15em;
+  }
+  .grid-item img {
+    max-width: 10em;
+  }
+  #teacher-desk {
+    min-width: 15em;
+  }
+  .words {
+    max-width: 50%;
   }
 }
