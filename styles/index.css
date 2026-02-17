@@ -176,7 +176,6 @@ main {
   flex-direction: column;
   margin-top: 4em;
   padding: 2em 0;
-  color: black;
   margin-bottom: 0;
 }
 .who-we-are-left,
@@ -188,7 +187,9 @@ main {
   gap: 2em;
   width: 90%;
   padding: 1.5em;
-  background-color: white;
+}
+.who-we-are-left {
+  border: solid 1.5px white;
 }
 .who-we-are-left .button {
   align-self: flex-start;
@@ -204,8 +205,6 @@ main {
   flex-direction: column;
   margin: 0;
   padding: 3em 0;
-
-  color: black;
 }
 .mission-vision {
   display: flex;
@@ -232,9 +231,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   padding: 5em 0;
-  color: black;
+  color: white;
 }
 .what-class-needs-section .grid {
   display: grid;
@@ -251,6 +249,16 @@ main {
   justify-content: center;
   align-items: center;
   max-width: 10em;
+}
+
+.about-section,
+.our-history,
+.our-purpose,
+.what-class-needs-section {
+  background-color: rgb(10, 0, 24);
+  color: white;
+  margin-top: 0;
+  padding-top: 4em;
 }
 .grid-item img {
   width: 100%;
