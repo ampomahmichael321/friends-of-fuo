@@ -96,7 +96,8 @@ nav {
 }
 
 main {
-  background-color: #f5f2f2;
+  background-color: rgb(10, 0, 24);
+  color: white;
 }
 
 .pop-up-window-hidden {
@@ -193,8 +194,8 @@ main {
 }
 .who-we-are-left .button {
   align-self: flex-start;
-  border: solid #cb1b44 2px;
-  color: #cb1b44;
+  border: solid gold 2px;
+  color: gold;
 }
 .our-history-right {
   width: 100%;
@@ -394,7 +395,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  background-color: black;
+  border-top: solid 1.5px white;
+  background-color: rgb(10, 0, 24);
+  color: white;
   color: white;
   padding: 2em 0;
   font-size: 1.1em;
