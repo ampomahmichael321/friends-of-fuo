@@ -369,7 +369,7 @@ main {
 }
 .swiper-button-prev,
 .swiper-button-next {
-  --swiper-navigation-color: black;
+  --swiper-navigation-color: white;
 }
 .latest-projects-swiper .swiper-button-prev,
 .latest-projects-swiper .swiper-button-next,
