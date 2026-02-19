@@ -11,9 +11,6 @@ html,
 body {
   overflow-x: hidden;
 }
-body {
-  font-size: 1.3em;
-}
 .color-gold {
   color: #d4af37;
   font-weight: 400;
@@ -98,6 +95,7 @@ nav {
 main {
   background-color: rgb(10, 0, 24);
   color: white;
+  font-size: 1.3em;
 }
 
 .pop-up-window-hidden {
