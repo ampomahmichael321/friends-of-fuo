@@ -30,7 +30,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: rgb(221, 221, 221);
   z-index: 20;
 }
 
@@ -128,15 +128,29 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   padding: 3em 1em;
-  background-image: url("../Images/fuo\ bg.jpeg");
-  background-color: rgba(0, 0, 0, 0.75);
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(7, 1, 15)),
+    url("../Images/fuo\ bg.jpeg");
+  background-color: rgba(0, 0, 0, 0.3);
+
   background-blend-mode: multiply;
   background-size: cover;
-  color: white;
+  color: rgb(214, 212, 212);
   gap: 1em;
   height: 80vh;
   z-index: -10;
 }
+.gradient-overlay {
+  position: relative;
+  background: linear-gradient(to bottom, black, rgb(10, 0, 24));
+  background-color: rgb(10, 0, 24);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(5px);
+  height: 3em;
+}
+
 .hero-section h1 {
   font-size: 2.5em;
 }
@@ -162,7 +176,6 @@ main {
 }
 
 .about-section {
-  margin-top: 3.5em;
   font-size: 1em;
 }
 .who-we-are,
@@ -256,9 +269,7 @@ main {
 .our-history,
 .our-purpose,
 .what-class-needs-section {
-  background-color: rgb(10, 0, 24);
   color: white;
-  margin-top: 0;
   padding-top: 4em;
 }
 .grid-item img {
