@@ -27,8 +27,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(10, 0, 24);
-  color: white;
+  background-color: rgb(228, 226, 226);
+  color: black;
   z-index: 20;
   border-bottom: solid 2px white;
   backdrop-filter: blur(5px);
@@ -582,7 +582,7 @@ footer a {
   }
   .nav-links a,
   .nav-links p {
-    color: white;
+    color: black;
   }
   .menu-button {
     display: none;
