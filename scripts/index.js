@@ -11,8 +11,10 @@ closeButton.addEventListener("click", () => {
   hiddenMenu.style.transform = "translateX(200em)";
 });
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (event) => {
     hiddenMenu.style.transform = "translateX(200em)";
+    navLinks.forEach((link) => link.classList.remove("active-link"));
+    event.target.classList.add("active-link");
   });
 });
 
@@ -139,3 +141,7 @@ learnMoreButtons.forEach((button) => {
 popUpCloseButton.addEventListener("click", () => {
   popUpWindow.style.display = "none";
 });
+
+const copyrightText = document.querySelector(".copyright-text");
+const currentYear = new Date().getFullYear();
+copyrightText.innerHTML = `Copyright &copy; Friends of Fuo 2 Inc. ${currentYear}`;
