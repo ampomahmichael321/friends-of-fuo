@@ -121,6 +121,8 @@ main {
   flex-direction: column;
   gap: 1.5em;
   padding: 1em 0;
+  font-size: 1.2em;
+  line-height: 1.4;
 }
 
 .hero-section {
