@@ -59,7 +59,7 @@ const projectsSwiper = new Swiper(".latest-projects-swiper", {
   slidesPerView: 1,
   spaceBetween: 0,
   direction: "horizontal",
-  loop: true,
+  loop: false,
 
   // Navigation arrows
   navigation: {
@@ -73,7 +73,7 @@ const campaignsSwiper = new Swiper(".ongoing-campaigns-swiper", {
   slidesPerView: 1,
   spaceBetween: 0,
   direction: "horizontal",
-  loop: true,
+  loop: false,
 
   // Navigation arrows
   navigation: {
