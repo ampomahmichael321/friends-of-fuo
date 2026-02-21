@@ -1,132 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-}
-html,
-body {
-  overflow-x: hidden;
-}
-.color-gold {
-  color: #d4af37;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(228, 226, 226);
-  color: black;
-  z-index: 20;
-  border-bottom: solid 2px white;
-  backdrop-filter: blur(5px);
-}
-
-.nav-right {
-  display: flex;
-  gap: 3em;
-}
-.nav-links {
-  display: none;
-  cursor: pointer;
-}
-.nav-buttons {
-  display: flex;
-  gap: 2em;
-  align-items: center;
-}
-.menu-button {
-  width: 3em;
-}
-
-.hidden-menu {
-  transform: translateX(200em);
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  margin-top: 1em;
-  padding: 2em 1em;
-  font-size: 2em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.814);
-  backdrop-filter: blur(10px);
-  margin: 0;
-  z-index: 100;
-  transition: transform 0.3s ease-in-out;
-}
-.close-button {
-  align-self: flex-end;
-  font-size: 0.5em;
-  cursor: pointer;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.5em 1em;
-  color: white;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.button:hover {
-  transform: translateY(-3px);
-}
-
-.donate-button {
-  background-color: #cb1b44;
-}
-.nav-link {
-  color: black;
-}
-
-main {
-  background-color: rgb(10, 0, 24);
-  color: rgb(223, 220, 220);
-  font-size: 1.1em;
-}
-
-.pop-up-window-hidden {
-  display: none;
-  position: fixed;
-  flex-direction: column;
-  gap: 2em;
-  padding: 1.1em;
-  font-size: 0.92em;
-  background-color: rgba(255, 255, 255, 0.814);
-  backdrop-filter: blur(10px);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 200;
-}
-.pop-up-main-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-  padding: 1em 0;
-  font-size: 1.2em;
-  line-height: 1.4;
-}
-
 .hero-section {
-  margin-top: 3em;
+  margin-top: 4em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -154,8 +27,11 @@ main {
   height: 3em;
 }
 
-.hero-section h1 {
-  font-size: 2.5em;
+.hero-overlay-text h1 {
+  font-size: 1.55em;
+}
+.hero-section p {
+  font-size: 0.8em;
 }
 .hero-overlay-text {
   display: flex;
@@ -173,9 +49,16 @@ main {
   max-width: 9.5em;
   height: 2.5em;
 }
-.get-involved-button {
+.see-impact-button,
+.learn-more-button {
   border: solid white 2px;
   font-size: 1em;
+}
+
+.learn-more-button {
+  border-color: #cb1b44;
+  color: #cb1b44;
+  padding: 0.5em 0.7em;
 }
 
 .about-section {
@@ -197,8 +80,13 @@ main {
   padding: 2em 0;
   margin-bottom: 0;
 }
-.who-we-are-left,
-.our-history-right {
+.img-description {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
+
+.who-we-are-left {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -208,17 +96,32 @@ main {
   padding: 1.5em;
 }
 .who-we-are-left {
-  border: solid 1.5px white;
+  border: solid 1.5px black;
+}
+.our-history-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 12px;
+  filter: brightness(80%);
 }
 .who-we-are-left .button {
   align-self: flex-start;
-  border: solid gold 2px;
-  color: gold;
+  border: solid #cb1b44 2px;
+  color: #cb1b44;
 }
 .our-history-right {
-  width: 100%;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 1em;
   background-color: transparent;
+}
+.our-history-right p {
+  max-width: 90%;
 }
 .our-purpose {
   flex-direction: column;
@@ -241,7 +144,7 @@ main {
   gap: 3em;
   align-items: center;
   justify-content: center;
-  border: solid rgb(221, 218, 218) 1.5px;
+  border: solid black 1.5px;
   border-radius: 15px;
   max-height: 25em;
   line-height: 1.2;
@@ -253,7 +156,6 @@ main {
   align-items: center;
   justify-content: center;
   padding: 5em 0;
-  color: white;
   line-height: 1.5;
   font-size: 1.1em;
 }
@@ -274,8 +176,7 @@ main {
   max-width: 10em;
   transition: all 0.3s ease-in-out;
 }
-.grid-item:hover,
-.mission-vision-card:hover {
+.grid-item:hover {
   transform: scale(1.2);
 }
 
@@ -283,7 +184,6 @@ main {
 .our-history,
 .our-purpose,
 .what-class-needs-section {
-  color: white;
   padding-top: 4em;
   line-height: 1.5;
 }
@@ -421,7 +321,6 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  border-top: solid 1.5px white;
   background-color: rgb(10, 0, 24);
   color: white;
   color: white;
@@ -503,15 +402,10 @@ footer a {
   text-align: right;
 }
 @media (min-width: 600px) {
-  nav {
-    padding: 1em 4em;
+  .hero-overlay-text h1 {
+    font-size: 2.5em;
   }
-  .hero-overlay-text {
-    max-width: 90%;
-  }
-  .hero-section h1 {
-    font-size: 3.5em;
-  }
+
   .hero-section p {
     font-size: 1.1em;
     max-width: 90%;
@@ -535,18 +429,29 @@ footer a {
   }
   .our-history-grid {
     display: flex;
-    justify-content: center;
+    justify-content: scenter;
     align-items: center;
-    gap: 5em;
+    gap: 1.5em;
+    padding: 1em;
   }
   .our-history-left {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .our-history-right .logo {
+
+  .img-description {
+    margin-top: 0.5em;
+  }
+  .our-history-right .our-history-img,
+  .our-history-right .img-description {
     display: none;
   }
   .our-history-right {
     max-width: 50%;
+  }
+  .our-history-right p {
+    max-width: 90%;
   }
 
   .mission-vision-card {
@@ -575,38 +480,11 @@ footer a {
 }
 
 @media (min-width: 900px) {
-  body {
-    font-size: 1.1em;
-  }
-  .nav-links {
-    display: flex;
-    gap: 4em;
-  }
-  .nav-links a,
-  .nav-links p {
-    color: black;
-  }
-  .menu-button {
-    display: none;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    align-items: center;
-    padding: 1em 4em;
-  }
-  .hidden-menu {
-    display: none;
-  }
   .hero-section {
     height: 90vh;
     padding: 4em;
   }
 
-  .hero-section h1 {
-    font-size: 4.5em;
-  }
   .hero-section p {
     font-size: 1.2em;
     max-width: 85%;

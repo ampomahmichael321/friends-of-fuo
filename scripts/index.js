@@ -1,29 +1,3 @@
-const menuButton = document.querySelector(".menu-button");
-const hiddenMenu = document.querySelector(".hidden-menu");
-const closeButton = document.querySelector(".close-button");
-const navLinks = document.querySelectorAll(".nav-link");
-
-menuButton.addEventListener("click", () => {
-  hiddenMenu.style.transform = "translateX(0)";
-});
-
-closeButton.addEventListener("click", () => {
-  hiddenMenu.style.transform = "translateX(200em)";
-});
-navLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    hiddenMenu.style.transform = "translateX(200em)";
-    navLinks.forEach((link) => link.classList.remove("active-link"));
-    event.target.classList.add("active-link");
-  });
-});
-
-AOS.init({
-  duration: 1500,
-  easing: "ease-in-out",
-  once: true,
-});
-
 const photoHighlightSwiper = new Swiper(".photo-highlights-swiper", {
   // Optional parameters
   slidesPerView: 1,
