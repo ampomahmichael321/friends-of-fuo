@@ -1,10 +1,8 @@
 main {
-  background-color: transparent;
   padding: 6em 1em;
 }
 .images img {
   width: 100%;
-  max-width: 20em;
 }
 .img-description {
   font-size: 0.8em;
@@ -17,6 +15,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1em;
+  padding: 1em 0;
 }
 .ways-to-give {
   margin-top: 2em;
@@ -37,4 +36,22 @@ main {
 .choose-impact-button {
   color: #cb1b44;
   border: solid #cb1b44 2px;
+}
+.donation-story-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.donation-story-section .images {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.donation-story-section .images img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: 10% 30%;
+  border-radius: 12px;
 }
