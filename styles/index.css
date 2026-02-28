@@ -179,7 +179,22 @@
 .grid-item:hover {
   transform: scale(1.2);
 }
+.our-impact-section {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+  padding: 0.3em;
+}
 
+.our-impact-section .images img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  margin: 0.5em 0;
+}
 .about-section,
 .our-history,
 .our-purpose,
@@ -202,11 +217,8 @@
   flex-direction: column;
   max-width: 90%;
   gap: 1em;
-  padding: 2em 0;
 }
-.words h2 {
-  margin-bottom: 1em;
-}
+
 .ongoing-campaigns,
 .latest-projects {
   display: flex;

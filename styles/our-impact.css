@@ -1,0 +1,40 @@
+main {
+  background-color: transparent;
+  padding: 6em 1em;
+}
+.images img {
+  width: 100%;
+  max-width: 20em;
+}
+.img-description {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.ways-to-give {
+  margin-top: 2em;
+}
+.section .words {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.choose-impact-button,
+.custom-gift-button {
+  padding: 1em;
+  min-width: 15em;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.choose-impact-button {
+  color: #cb1b44;
+  border: solid #cb1b44 2px;
+}

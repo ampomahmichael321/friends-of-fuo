@@ -22,15 +22,22 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 0 1em;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(228, 226, 226);
+  background-color: white;
   color: black;
   z-index: 20;
   backdrop-filter: blur(5px);
+}
+nav .logo-container {
+  max-width: 5em;
+}
+.logo {
+  width: 100%;
+  overflow: hidden;
 }
 
 .nav-right {
@@ -125,7 +132,7 @@ main {
 }
 @media (min-width: 600px) {
   nav {
-    padding: 1em 4em;
+    padding: 0 4em;
   }
 }
 @media (min-width: 900px) {
@@ -148,7 +155,7 @@ main {
     justify-content: space-between;
     width: 100vw;
     align-items: center;
-    padding: 1em 4em;
+    padding: 0 4em;
   }
   .hidden-menu {
     display: none;
