@@ -38,7 +38,7 @@ nav {
   backdrop-filter: blur(5px);
 }
 nav .logo-container {
-  max-width: 5em;
+  max-width: 5.5em;
 }
 .logo {
   width: 100%;
@@ -67,7 +67,7 @@ nav .logo-container {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  margin-top: 1em;
+  margin-top: 0.5em;
   padding: 2em 1em;
   font-size: 2em;
   position: fixed;
@@ -101,6 +101,7 @@ nav .logo-container {
 
 .donate-button {
   background-color: #cb1b44;
+  font-size: 0.85em;
 }
 .nav-link {
   color: black;
@@ -126,6 +127,7 @@ main {
   right: 0;
   bottom: 0;
   z-index: 200;
+  overflow-y: scroll;
 }
 .pop-up-main-content {
   display: flex;

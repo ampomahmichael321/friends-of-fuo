@@ -47,12 +47,12 @@
 .hero-button-section .button {
   min-width: 8em;
   max-width: 9.5em;
-  height: 2.5em;
+  min-height: 2.5em;
 }
 .see-impact-button,
 .learn-more-button {
   border: solid white 2px;
-  font-size: 1em;
+  font-size: 0.85em;
 }
 
 .learn-more-button {
