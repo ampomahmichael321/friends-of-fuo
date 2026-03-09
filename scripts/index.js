@@ -75,7 +75,7 @@ learnMoreButtons.forEach((button) => {
           <li>$1,000 - Adopt a classroom</li>
 
         </ul>
-        <a href="" class="button donate-button">DONATE</a>
+        <a href="https://www.zeffy.com/en-US/donation-form/from-the-floor-to-a-desk" target="_blank" class="button donate-button">DONATE</a>
 
 
         `;
@@ -99,7 +99,7 @@ learnMoreButtons.forEach((button) => {
       If you ever believed education changes lives, this is your moment to act
       </p>
       <p>Donate, Share, Stand with us. Because talent should never be limited by furniture</p>
-      <a href="" class="button donate-button">DONATE</a>
+      <a href="https://www.zeffy.com/en-US/donation-form/from-the-floor-to-a-desk" target="_blank" class="button donate-button">DONATE</a>
 
       `;
     }

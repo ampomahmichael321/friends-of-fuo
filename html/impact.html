@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script src="../scripts/general.js" defer></script>
+    <script src="../scripts/our-impact.js" defer></script>
     <title>FOF 2 INC | OUR IMPACT</title>
   </head>
   <body>
@@ -53,8 +54,8 @@
       <div class="close-button">
         <img src="../icons/close-icon-black.png" alt="close-button" />
       </div>
-      <a href="index.html" class="nav-link">HOME</a>
-      <a href="#about-section" class="nav-link">ABOUT</a>
+      <a href="../index.html" class="nav-link">HOME</a>
+      <a href="../index.html#about-section" class="nav-link">ABOUT</a>
       <a
         href="https://friends-of-fuo-backend.onrender.com/blog"
         class="nav-link"
@@ -119,24 +120,28 @@
         </div>
         <div class="desktop-only">
           <div class="flex-left">
-            <div class="images" data-aos="fade-up">
-              <div class="image">
-                <img
-                  src="../Images/donation4.jpg"
-                  alt="image of donation made by Friends of Fuo"
-                />
-                <p class="img-description">
-                  "Donation of new desks to Fuo AME Zion"
-                </p>
-              </div>
-              <div class="image">
-                <img
-                  src="../Images/children-on-new-chairs.jpg"
-                  alt="image of donation made by Friends of Fuo"
-                />
-                <p class="img-description">
-                  "Children sitting on the new desks donated by Friends of Fuo"
-                </p>
+            <div class="our-impact-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide image">
+                  <img
+                    src="../Images/donation4.jpg"
+                    alt="image of donation made by Friends of Fuo"
+                  />
+                  <p class="img-description">
+                    "Donation of new desks to Fuo AME Zion"
+                  </p>
+                </div>
+                <div class="swiper-slide image">
+                  <img
+                    src="../Images/children-on-new-chairs.jpg"
+                    alt="image of donation made by Friends of Fuo"
+                  />
+                  <p class="img-description">
+                    "Children sitting on the new desks donated by Friends of
+                    Fuo"
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -190,6 +195,59 @@
             </p>
           </div>
         </div>
+        <div class="desktop-only">
+          <div class="flex-left">
+            <div class="our-impact-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide image">
+                  <img
+                    src="../Images/plaque-on-the-wall.jpg"
+                    alt="image of a plaque on the wall of a classroom at Fuo AME Zion Basic School"
+                  />
+                  <p class="img-description">
+                    "An Image of a plaque on the wall of a classroom at Fuo AME
+                    Zion Basic School"
+                  </p>
+                </div>
+                <div class="swiper-slide image">
+                  <img
+                    src="../Images/plaque-in-class.jpg"
+                    alt="image of a plaque on the classroom wall displaying the names of the donors"
+                  />
+                  <p class="img-description">
+                    "An Image of a plaque on the classroom wall displaying the
+                    names of the donors"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-right">
+            <div class="words">
+              <p data-aos="zoom-in-up">
+                At Fuo AME Zion Basic School, every classroom tells a story.
+              </p>
+              <p data-aos="zoom-in-up">
+                On the wall is a plaque-listing the names of those who made
+                learning possible in that room. Parents see it. Teachers see it.
+                Students see it.
+              </p>
+              <p data-aos="zoom-in-up">
+                Children grow up knowing:<br />
+                Someone somewhere cared enough to invest in us.
+              </p>
+              <p data-aos="zoom-in-up">
+                This is how generosity becomes memory.<br />
+                This is how impact becomes legacy.
+              </p>
+              <p data-aos="zoom-in-up">
+                When you give to Friends of Fuo 2 Inc., your name isn't filed
+                away, it is honored where learning happens
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="section ways-to-give" data-aos="fade-up">
         <h2 class="color-gold">WAYS TO GIVE</h2>
@@ -203,8 +261,12 @@
           <p>$500 Classroom Support</p>
           <p>$1,000 or more : Adopt a Classroom</p>
         </div>
-        <button class="choose-impact-button">Choose your Impact</button>
-        <button class="custom-gift-button">Give a custom Gift</button>
+        <a
+          href="https://www.zeffy.com/en-US/donation-form/from-the-floor-to-a-desk"
+          class="choose-impact-button"
+          target="_blank"
+          >Choose your Impact
+        </a>
       </div>
       <div class="section"></div>
     </main>
