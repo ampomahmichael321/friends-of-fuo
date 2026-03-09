@@ -589,4 +589,14 @@ footer a {
   .words {
     max-width: 50%;
   }
+  .swiper-wrapper,
+  .swiper-slide,
+  .swiper-slide img {
+    aspect-ratio: 16/9;
+    height: 15em;
+  }
+  .swiper-slide img {
+    object-fit: cover;
+    filter: brightness(80%);
+  }
 }
