@@ -45,14 +45,15 @@ main {
   flex-direction: column;
   gap: 1em;
 }
-.donation-story-section .images img {
+.our-impact-so-far .images img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: 10% 30%;
   border-radius: 12px;
 }
-.all-screens {
+ul {
+  line-height: 2em;
 }
 .desktop-only {
   display: none;
