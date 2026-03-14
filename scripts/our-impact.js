@@ -1,17 +1,11 @@
-const ourImpactSwiper = new Swiper(".our-impact-swiper", {
+const donationStorySwiper = new Swiper(".donation-story-section-slider", {
   // Optional parameters
   slidesPerView: 1,
-  spaceBetween: 0,
+  spaceBetween: 20,
   direction: "horizontal",
-  loop: true,
+  loop: false,
   autoplay: {
-    delay: 3000, // time between slides (ms) → 3000ms = 3 seconds
+    delay: 4000, // time between slides (ms) → 4000ms = 4 seconds
     disableOnInteraction: false, // keeps autoplay running after user swipes
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });

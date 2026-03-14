@@ -29,13 +29,18 @@ main {
   border: solid #cb1b44 2px;
   padding: 0.5em 1em;
 }
-.donation-story-section {
+.our-impact-so-far {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
 }
-.donation-story-section .images {
+.words {
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  max-width: 100%;
+}
+.our-impact-so-far .images {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -46,6 +51,8 @@ main {
   object-fit: cover;
   object-position: 10% 30%;
   border-radius: 12px;
+}
+.all-screens {
 }
 .desktop-only {
   display: none;
@@ -67,27 +74,29 @@ main {
   }
   .desktop-only {
     display: flex;
-    justify-content: space-between;
-    gap: 2em;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 1.15em;
   }
-  .desktop-only .flex-left {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    max-width: 40%;
+  .desktop-only .image-section {
+    max-width: 50%;
   }
-  .our-impact-swiper {
-    width: 100%;
-    overflow-x: hidden;
+  .desktop-only .words {
+    width: 40%;
+    margin-top: -0.5em;
   }
 
-  .our-impact-swiper .swiper-slide img {
+  .image-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    width: 100%;
+  }
+  .image-section img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    object-position: 10% 30%;
+    object-position: center 30%;
     border-radius: 12px;
   }
 }
