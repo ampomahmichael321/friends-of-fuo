@@ -1,4 +1,4 @@
-const donationStorySwiper = new Swiper(".donation-story-section-slider", {
+const donationStorySwiper = new Swiper(".mobile-impact-in-action-swiper", {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 20,
