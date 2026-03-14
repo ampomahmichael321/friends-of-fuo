@@ -413,6 +413,31 @@ footer a {
 .who-we-are-right {
   text-align: right;
 }
+.our-goals {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.goal-cards {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 40em;
+}
+.goal-card {
+  border-radius: 12px;
+  background-color: rgba(201, 201, 201, 0.608);
+  padding: 1em;
+  min-width: 10em;
+  max-width: 15em;
+  text-align: center;
+  width: 15em;
+  padding: 3em 0;
+}
 @media (min-width: 600px) {
   .hero-overlay-text h1 {
     font-size: 2.5em;
