@@ -34,6 +34,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1em;
+  margin-bottom: 1.5em;
 }
 .words {
   line-height: 1.5em;
@@ -89,6 +90,7 @@ ul {
 .image.mobile {
   width: 100vw;
 }
+
 @media (min-width: 800px) {
   .mobile-only {
     display: none;
@@ -119,5 +121,35 @@ ul {
     object-fit: cover;
     object-position: center 30%;
     border-radius: 12px;
+  }
+  .impact-in-action-desktop {
+    width: 100%;
+    gap: 1em;
+    padding: 0 0 0 1.5em;
+  }
+  .impact-in-action-desktop .flex-left {
+    max-width: 50%;
+  }
+  .desktop-impact-in-action-swiper {
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+  ul {
+    width: 45%;
+    line-height: 2em;
+  }
+  .desktop-impact-in-action-swiper img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 12px;
+  }
+  .color-gold {
+    margin-bottom: 1em;
+  }
+  .field-updates {
+    padding: 0 2em;
   }
 }
