@@ -93,7 +93,7 @@ ul {
   width: 100vw;
 }
 .plaque-section .images img {
-  height: 15em;
+  min-height: 15em;
 }
 .field-updates .image-section img {
   width: 100%;
@@ -103,6 +103,21 @@ ul {
   object-position: center 25%;
 }
 
+@media (min-width: 700px) and (max-width: 899px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  .plaque-section .images img {
+    min-height: 25em;
+  }
+}
 @media (min-width: 900px) {
   .mobile-only {
     display: none;
