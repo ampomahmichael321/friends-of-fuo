@@ -70,11 +70,13 @@ ul {
   width: 100vw;
   margin: 2em -1em -2em -1em;
 }
-.mobile-impact-in-action-swiper {
+.mobile-impact-in-action-swiper,
+.plaque-section-swiper {
   width: 100vw;
   object-fit: cover;
   margin: 0;
 }
+
 .swiper img {
   width: 100%;
   aspect-ratio: 16/9;
@@ -89,6 +91,9 @@ ul {
 }
 .image.mobile {
   width: 100vw;
+}
+.plaque-section .images img {
+  height: 15em;
 }
 
 @media (min-width: 800px) {
@@ -148,6 +153,25 @@ ul {
   }
   .color-gold {
     margin-bottom: 1em;
+  }
+
+  .plaque-section {
+    flex-direction: row-reverse;
+    gap: 2em;
+    justify-content: space-evenly;
+  }
+  .plaque-section .words {
+    width: 50%;
+  }
+  .plaque-section .images {
+    width: 40%;
+  }
+
+  .plaque-section .images img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    height: 20em;
   }
   .field-updates {
     padding: 0 2em;
