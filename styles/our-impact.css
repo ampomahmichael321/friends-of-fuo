@@ -193,4 +193,8 @@ ul {
   .field-updates-flex-section .words {
     width: 100%;
   }
+  .meet-the-community,
+  .adopt-a-classroom {
+    padding: 0 2em;
+  }
 }
