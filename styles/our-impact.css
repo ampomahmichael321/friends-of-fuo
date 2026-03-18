@@ -95,6 +95,13 @@ ul {
 .plaque-section .images img {
   height: 15em;
 }
+.field-updates .image-section img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1em;
+  object-fit: cover;
+  object-position: center 25%;
+}
 
 @media (min-width: 800px) {
   .mobile-only {
@@ -152,7 +159,8 @@ ul {
     border-radius: 12px;
   }
   .color-gold {
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
   }
 
   .plaque-section {
@@ -175,5 +183,14 @@ ul {
   }
   .field-updates {
     padding: 0 2em;
+  }
+  .field-updates-flex-section {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .field-updates-flex-section .words {
+    width: 100%;
   }
 }
