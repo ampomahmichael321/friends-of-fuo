@@ -71,7 +71,8 @@ ul {
   margin: 2em -1em -2em -1em;
 }
 .mobile-impact-in-action-swiper,
-.plaque-section-swiper {
+.plaque-section-swiper,
+.field-updates-swiper {
   width: 100vw;
   object-fit: cover;
   margin: 0;
@@ -89,15 +90,18 @@ ul {
 .words.last {
   margin-bottom: 2em;
 }
+.field-updates-flex-section .words {
+  padding: 0.7em;
+}
 .image.mobile {
   width: 100vw;
 }
 .plaque-section .images img {
   min-height: 15em;
 }
-.field-updates .image-section img {
+
+.field-updates-swiper img {
   width: 100%;
-  border-radius: 12px;
   margin-top: 1em;
   object-fit: cover;
   object-position: center 25%;
@@ -239,5 +243,11 @@ ul {
   }
   .adopt-a-classroom .flex-section .words {
     max-width: 50%;
+  }
+  .field-updates-swiper {
+    width: 70%;
+  }
+  .field-updates-swiper img {
+    border-radius: 12px;
   }
 }
