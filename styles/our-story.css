@@ -5,9 +5,11 @@ body {
 
 .our-story {
   padding-top: 6em;
-  position: relative;
   display: flex;
   flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .our-story-grid {
   display: flex;
@@ -27,10 +29,11 @@ body {
 .our-story h2 {
   font-size: 1.8em;
   padding: 0.5em;
+  text-align: center;
 }
+
 .our-story-swiper.mobile-only {
-  margin-left: 2.5%;
-  max-width: 95%;
+  width: 100vw;
   max-height: 50em;
   overflow-x: hidden;
 }
@@ -39,11 +42,29 @@ body {
   aspect-ratio: 16/9;
   object-fit: cover;
   filter: brightness(80%);
-  border-radius: 12px;
   overflow-x: hidden;
 }
 .desktop-only {
   display: none;
+}
+.good-morning-mom {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.story-cont {
+  margin-top: 0;
+}
+
+.good-morning-mom .left {
+  max-width: 25em;
+}
+.good-morning-mom .left img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
 }
 
 @media (min-width: 900px) {
@@ -51,8 +72,8 @@ body {
     padding: 6em 1em;
   }
   .our-story-grid {
-    flex-direction: row;
     gap: 4em;
+    align-items: center;
   }
   .our-story p {
     max-width: 80%;
@@ -75,5 +96,28 @@ body {
     max-width: 35em;
     height: 100%;
     overflow-x: hidden;
+    border-radius: 12px;
+  }
+  .our-story-swiper.desktop-only img {
+    border-radius: 12px;
+  }
+  .good-morning-mom {
+    padding: 2em 0.5em;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+  }
+  .good-morning-mom .left {
+    max-width: 40%;
+  }
+  .good-morning-mom .left img {
+    border-radius: 12px;
+  }
+  .good-morning-mom .right {
+    max-width: 55%;
+  }
+  .story-cont {
+    padding: 0 1em;
   }
 }
