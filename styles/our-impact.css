@@ -102,7 +102,14 @@ ul {
   object-fit: cover;
   object-position: center 25%;
 }
-
+.meet-the-community-img {
+  max-width: 25em;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.adopt-a-classroom-img {
+  max-width: 18em;
+}
 @media (min-width: 700px) and (max-width: 899px) {
   .desktop-only {
     display: none;
@@ -222,11 +229,13 @@ ul {
     object-fit: cover;
   }
   .adopt-a-classroom-img {
-    max-width: 12em;
+    max-width: 14em;
   }
+
   .adopt-a-classroom .flex-section {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
   .adopt-a-classroom .flex-section .words {
     max-width: 50%;
