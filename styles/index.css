@@ -6,7 +6,7 @@
   padding: 3em 1em;
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(7, 1, 15)),
-    url("../Images/fuo\ bg.jpeg");
+    url("https://res.cloudinary.com/duwmdqwof/image/upload/q_auto/f_auto/v1775210707/fuo_bg_g4kxh7.jpg");
   background-color: rgba(0, 0, 0, 0.3);
 
   background-blend-mode: multiply;
