@@ -92,8 +92,19 @@ ul {
   margin-bottom: 2em;
 }
 .field-updates-flex-section .words {
-  padding: 0.7em;
+  padding: 2em;
+  background-color: yellow;
+  max-width: 95%;
+  margin-left: 0;
 }
+.field-updates-flex-section .image-section {
+  height: 28em;
+}
+.field-updates-flex-section .image-section img {
+  height: 100%;
+  object-position: center 9%;
+}
+
 .image.mobile {
   width: 100vw;
 }
