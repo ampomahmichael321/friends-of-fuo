@@ -91,18 +91,6 @@ ul {
 .words.last {
   margin-bottom: 2em;
 }
-.field-updates-flex-section .words {
-  padding: 2em;
-  max-width: 95%;
-  margin-left: 0;
-}
-.field-updates-flex-section .image-section {
-  height: 28em;
-}
-.field-updates-flex-section .image-section img {
-  height: 100%;
-  object-position: center 9%;
-}
 
 .image.mobile {
   width: 100vw;
@@ -125,6 +113,13 @@ ul {
 .adopt-a-classroom-img {
   max-width: 18em;
 }
+.image-section.mobile-only {
+  max-width: 100%;
+}
+.image-section.mobile-only img {
+  width: 100%;
+  border-radius: 12px;
+}
 @media (min-width: 700px) and (max-width: 899px) {
   .desktop-only {
     display: none;
@@ -139,9 +134,19 @@ ul {
   .plaque-section .images img {
     min-height: 25em;
   }
+  .field-updates-flex-section .image-section {
+    height: 28em;
+  }
+  .field-updates-flex-section .image-section img {
+    height: 100%;
+    object-position: center 9%;
+  }
 }
 @media (min-width: 900px) {
   .mobile-only {
+    display: none;
+  }
+  .image-section.mobile-only {
     display: none;
   }
   .desktop-only {
@@ -260,5 +265,12 @@ ul {
   }
   .field-updates-swiper img {
     border-radius: 12px;
+  }
+  .field-updates-flex-section .image-section {
+    height: 28em;
+  }
+  .field-updates-flex-section .image-section img {
+    height: 100%;
+    object-position: center 9%;
   }
 }
